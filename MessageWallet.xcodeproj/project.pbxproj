@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30C740DD23DC6DC000FDB29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C740DC23DC6DC000FDB29E /* AppDelegate.swift */; };
+		30C740DF23DC6DC000FDB29E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C740DE23DC6DC000FDB29E /* SceneDelegate.swift */; };
+		30C740E123DC6DC000FDB29E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C740E023DC6DC000FDB29E /* ViewController.swift */; };
+		30C740E423DC6DC000FDB29E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C740E223DC6DC000FDB29E /* Main.storyboard */; };
+		30C740E623DC6DC400FDB29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C740E523DC6DC400FDB29E /* Assets.xcassets */; };
+		30C740E923DC6DC400FDB29E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C740E723DC6DC400FDB29E /* LaunchScreen.storyboard */; };
+		30C740F423DC6DC400FDB29E /* MessageWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C740F323DC6DC400FDB29E /* MessageWalletTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30C740F023DC6DC400FDB29E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30C740D123DC6DC000FDB29E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30C740D823DC6DC000FDB29E;
+			remoteInfo = MessageWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30C740D923DC6DC000FDB29E /* MessageWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C740DC23DC6DC000FDB29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30C740DE23DC6DC000FDB29E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		30C740E023DC6DC000FDB29E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30C740E323DC6DC000FDB29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30C740E523DC6DC400FDB29E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30C740E823DC6DC400FDB29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30C740EA23DC6DC400FDB29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C740EF23DC6DC400FDB29E /* MessageWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C740F323DC6DC400FDB29E /* MessageWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageWalletTests.swift; sourceTree = "<group>"; };
+		30C740F523DC6DC400FDB29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30C740D623DC6DC000FDB29E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C740EC23DC6DC400FDB29E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30C740D023DC6DC000FDB29E = {
+			isa = PBXGroup;
+			children = (
+				30C740DB23DC6DC000FDB29E /* MessageWallet */,
+				30C740F223DC6DC400FDB29E /* MessageWalletTests */,
+				30C740DA23DC6DC000FDB29E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30C740DA23DC6DC000FDB29E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C740D923DC6DC000FDB29E /* MessageWallet.app */,
+				30C740EF23DC6DC400FDB29E /* MessageWalletTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C740DB23DC6DC000FDB29E /* MessageWallet */ = {
+			isa = PBXGroup;
+			children = (
+				30C740DC23DC6DC000FDB29E /* AppDelegate.swift */,
+				30C740DE23DC6DC000FDB29E /* SceneDelegate.swift */,
+				30C740E023DC6DC000FDB29E /* ViewController.swift */,
+				30C740E223DC6DC000FDB29E /* Main.storyboard */,
+				30C740E523DC6DC400FDB29E /* Assets.xcassets */,
+				30C740E723DC6DC400FDB29E /* LaunchScreen.storyboard */,
+				30C740EA23DC6DC400FDB29E /* Info.plist */,
+			);
+			path = MessageWallet;
+			sourceTree = "<group>";
+		};
+		30C740F223DC6DC400FDB29E /* MessageWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				30C740F323DC6DC400FDB29E /* MessageWalletTests.swift */,
+				30C740F523DC6DC400FDB29E /* Info.plist */,
+			);
+			path = MessageWalletTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30C740D823DC6DC000FDB29E /* MessageWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C740F823DC6DC400FDB29E /* Build configuration list for PBXNativeTarget "MessageWallet" */;
+			buildPhases = (
+				30C740D523DC6DC000FDB29E /* Sources */,
+				30C740D623DC6DC000FDB29E /* Frameworks */,
+				30C740D723DC6DC000FDB29E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageWallet;
+			productName = MessageWallet;
+			productReference = 30C740D923DC6DC000FDB29E /* MessageWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30C740EE23DC6DC400FDB29E /* MessageWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C740FB23DC6DC400FDB29E /* Build configuration list for PBXNativeTarget "MessageWalletTests" */;
+			buildPhases = (
+				30C740EB23DC6DC400FDB29E /* Sources */,
+				30C740EC23DC6DC400FDB29E /* Frameworks */,
+				30C740ED23DC6DC400FDB29E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30C740F123DC6DC400FDB29E /* PBXTargetDependency */,
+			);
+			name = MessageWalletTests;
+			productName = MessageWalletTests;
+			productReference = 30C740EF23DC6DC400FDB29E /* MessageWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30C740D123DC6DC000FDB29E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Orlando Arzola Aragort";
+				TargetAttributes = {
+					30C740D823DC6DC000FDB29E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					30C740EE23DC6DC400FDB29E = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 30C740D823DC6DC000FDB29E;
+					};
+				};
+			};
+			buildConfigurationList = 30C740D423DC6DC000FDB29E /* Build configuration list for PBXProject "MessageWallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30C740D023DC6DC000FDB29E;
+			productRefGroup = 30C740DA23DC6DC000FDB29E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C740D823DC6DC000FDB29E /* MessageWallet */,
+				30C740EE23DC6DC400FDB29E /* MessageWalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30C740D723DC6DC000FDB29E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C740E923DC6DC400FDB29E /* LaunchScreen.storyboard in Resources */,
+				30C740E623DC6DC400FDB29E /* Assets.xcassets in Resources */,
+				30C740E423DC6DC000FDB29E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C740ED23DC6DC400FDB29E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30C740D523DC6DC000FDB29E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C740E123DC6DC000FDB29E /* ViewController.swift in Sources */,
+				30C740DD23DC6DC000FDB29E /* AppDelegate.swift in Sources */,
+				30C740DF23DC6DC000FDB29E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C740EB23DC6DC400FDB29E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C740F423DC6DC400FDB29E /* MessageWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30C740F123DC6DC400FDB29E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30C740D823DC6DC000FDB29E /* MessageWallet */;
+			targetProxy = 30C740F023DC6DC400FDB29E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30C740E223DC6DC000FDB29E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C740E323DC6DC000FDB29E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30C740E723DC6DC400FDB29E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C740E823DC6DC400FDB29E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30C740F623DC6DC400FDB29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30C740F723DC6DC400FDB29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30C740F923DC6DC400FDB29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MessageWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OrlandoArzola.MessageWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30C740FA23DC6DC400FDB29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MessageWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OrlandoArzola.MessageWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30C740FC23DC6DC400FDB29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MessageWalletTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OrlandoArzola.MessageWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessageWallet.app/MessageWallet";
+			};
+			name = Debug;
+		};
+		30C740FD23DC6DC400FDB29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MessageWalletTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OrlandoArzola.MessageWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessageWallet.app/MessageWallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C740D423DC6DC000FDB29E /* Build configuration list for PBXProject "MessageWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C740F623DC6DC400FDB29E /* Debug */,
+				30C740F723DC6DC400FDB29E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C740F823DC6DC400FDB29E /* Build configuration list for PBXNativeTarget "MessageWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C740F923DC6DC400FDB29E /* Debug */,
+				30C740FA23DC6DC400FDB29E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C740FB23DC6DC400FDB29E /* Build configuration list for PBXNativeTarget "MessageWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C740FC23DC6DC400FDB29E /* Debug */,
+				30C740FD23DC6DC400FDB29E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30C740D123DC6DC000FDB29E /* Project object */;
+}
