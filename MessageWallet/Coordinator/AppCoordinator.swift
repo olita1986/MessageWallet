@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Web3
 
-class AppCoordinator: Coordinator {
+class AppCoordinator: Coordinator,
+    SetupViewControllerDelegate {
     public var rootViewController: UIViewController {
         return navigationController
     }
@@ -22,6 +24,14 @@ class AppCoordinator: Coordinator {
     override func start() {
         let setupVC = SetupViewController()
         setupVC.title = "Setup"
+        setupVC.delegate = self
         navigationController.pushViewController(setupVC, animated: false)
+    }
+    
+    // MARK: - SetupViewControllerDelegate methods
+    
+    func privateKeyWasSuccesful(withPrivateKey key: EthereumPrivateKey) {
+        let accountVC = AccountViewController(privateKey: key)
+        navigationController.pushViewController(accountVC, animated: true)
     }
 }

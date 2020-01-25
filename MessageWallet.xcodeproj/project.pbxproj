@@ -32,6 +32,8 @@
 		30C7413523DC7AE500FDB29E /* UIViewControllersExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7413423DC7AE500FDB29E /* UIViewControllersExtensions.swift */; };
 		30C7413923DC8D9D00FDB29E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7413723DC8D9D00FDB29E /* FormViewController.swift */; };
 		30C7413A23DC8D9D00FDB29E /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C7413823DC8D9D00FDB29E /* FormViewController.xib */; };
+		30C7413D23DCDECE00FDB29E /* QRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7413C23DCDECE00FDB29E /* QRService.swift */; };
+		30C7413F23DCEBA700FDB29E /* ETHService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7413E23DCEBA700FDB29E /* ETHService.swift */; };
 		8FB0809E19DC055D398145F8 /* Pods_MessageWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E57FC85B18E37C9EA998C20 /* Pods_MessageWallet.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		30C7413423DC7AE500FDB29E /* UIViewControllersExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllersExtensions.swift; sourceTree = "<group>"; };
 		30C7413723DC8D9D00FDB29E /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		30C7413823DC8D9D00FDB29E /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
+		30C7413C23DCDECE00FDB29E /* QRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRService.swift; sourceTree = "<group>"; };
+		30C7413E23DCEBA700FDB29E /* ETHService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETHService.swift; sourceTree = "<group>"; };
 		6C1B6EB5B96C1ED15DE9C42E /* Pods-MessageWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-MessageWalletTests/Pods-MessageWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A0487A4FE0921FD3FC4F90D /* Pods_MessageWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0FA22DFD32247BD9EBBED2 /* Pods-MessageWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageWalletTests.release.xcconfig"; path = "Target Support Files/Pods-MessageWalletTests/Pods-MessageWalletTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 		30C740DB23DC6DC000FDB29E /* MessageWallet */ = {
 			isa = PBXGroup;
 			children = (
+				30C7413B23DCDE8A00FDB29E /* Services */,
 				30C7413323DC7AAA00FDB29E /* Extensions */,
 				30C7412E23DC76C700FDB29E /* Coordinator */,
 				30C7410323DC733400FDB29E /* Helpers */,
@@ -281,6 +286,15 @@
 				30C7413823DC8D9D00FDB29E /* FormViewController.xib */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		30C7413B23DCDE8A00FDB29E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				30C7413C23DCDECE00FDB29E /* QRService.swift */,
+				30C7413E23DCEBA700FDB29E /* ETHService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		5607B8247C8CD82CA01821BF /* Frameworks */ = {
@@ -483,6 +497,7 @@
 				30C7411823DC750500FDB29E /* SignatureViewController.swift in Sources */,
 				30C7413023DC76DB00FDB29E /* Coordinator.swift in Sources */,
 				30C7412723DC755A00FDB29E /* SignInViewModel.swift in Sources */,
+				30C7413F23DCEBA700FDB29E /* ETHService.swift in Sources */,
 				30C7412523DC754E00FDB29E /* AccountViewModel.swift in Sources */,
 				30C7412323DC753700FDB29E /* SetupViewModel.swift in Sources */,
 				30C7410C23DC74D600FDB29E /* SetupViewController.swift in Sources */,
@@ -490,6 +505,7 @@
 				30C7413223DC771C00FDB29E /* AppCoordinator.swift in Sources */,
 				30C740DD23DC6DC000FDB29E /* AppDelegate.swift in Sources */,
 				30C7413923DC8D9D00FDB29E /* FormViewController.swift in Sources */,
+				30C7413D23DCDECE00FDB29E /* QRService.swift in Sources */,
 				30C7411023DC74E600FDB29E /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

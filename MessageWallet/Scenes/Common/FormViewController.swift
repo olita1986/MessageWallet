@@ -10,6 +10,7 @@ import UIKit
 
 class FormViewController: UIViewController {
 
+    @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var inputTextField: UITextField!
     

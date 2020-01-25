@@ -6,28 +6,71 @@
 //  Copyright © 2020 Orlando Arzola Aragort. All rights reserved.
 //
 
-import UIKit
+import RxCocoa
+import RxSwift
 
 class SignatureViewController: UIViewController {
 
+    // MARK: - Outlets
+    
     @IBOutlet weak var inputMessageLabel: UILabel!
     @IBOutlet weak var qrImageView: UIImageView!
     
+    // MARK: - Properties
+    
+    let disposeBag = DisposeBag()
+    
+    let viewModel: SignatureViewModel
+    let message: String
+    
+    init(viewModel: SignatureViewModel = SignatureViewModel(),
+         message: String) {
+        self.message = message
+        self.viewModel = viewModel
+        
+        super.init(
+            nibName: "SignatureViewController",
+            bundle: nil
+        )
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupViews()
 
-        // Do any additional setup after loading the view.
+        viewModel.getQRImage(withMessage: message)
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - UI Setup
+    
+    func setupViews() {
+        setupInputMessageLabel()
+        setupQRImageView()
     }
-    */
+    
+    func setupInputMessageLabel() {
+        let attrString = NSMutableAttributedString(
+            string: "Message: ",
+            attributes: [
+                .font : UIFont.boldSystemFont(ofSize: 17)
+            ]
+        )
+        attrString.append(NSAttributedString(string: message))
+        inputMessageLabel.attributedText = attrString
+    }
+    
+    func setupQRImageView() {
+        viewModel.qrImage
+            .drive(qrImageView.rx.image)
+            .disposed(by: disposeBag)
+    }
+    
+    
 
 }

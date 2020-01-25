@@ -32,6 +32,7 @@ class SignInViewController: FormViewController {
         super.viewDidLoad()
 
         setupViews()
+        viewModel.doSomethingElse()
     }
     
     private func setupViews() {

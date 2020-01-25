@@ -25,7 +25,7 @@
                     <rect key="frame" x="20" y="64" width="374" height="261"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="oBO-g1-j6f">
-                            <rect key="frame" x="39" y="0.0" width="296" height="135"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="135"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6ft-Kq-U5n">
                                     <rect key="frame" x="0.0" y="0.0" width="296" height="54.5"/>
@@ -36,7 +36,7 @@
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2908374912837491827349127394" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zx-JQ-8nF">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2908374912837491827349127394" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zx-JQ-8nF">
                                             <rect key="frame" x="0.0" y="34" width="296" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -89,6 +89,10 @@
                             </subviews>
                         </stackView>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="oBO-g1-j6f" firstAttribute="leading" secondItem="eDb-FJ-ida" secondAttribute="leading" id="GDH-SX-CSf"/>
+                        <constraint firstAttribute="trailing" secondItem="oBO-g1-j6f" secondAttribute="trailing" id="OM6-G1-aRI"/>
+                    </constraints>
                 </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -9,9 +9,10 @@
 import RxCocoa
 import RxSwift
 import UIKit
+import Web3
 
 protocol SetupViewControllerDelegate: AnyObject {
-    func getInfoButtonWasPressed()
+    func privateKeyWasSuccesful(withPrivateKey key: EthereumPrivateKey)
 }
 
 class SetupViewController: FormViewController {
@@ -20,6 +21,7 @@ class SetupViewController: FormViewController {
     
     private let disposeBag = DisposeBag()
     private let viewModel: SetupViewModel
+    weak var delegate: SetupViewControllerDelegate?
     
     init(viewModel: SetupViewModel = SetupViewModel()) {
         self.viewModel = viewModel
@@ -36,11 +38,13 @@ class SetupViewController: FormViewController {
         super.viewDidLoad()
 
         setupViews()
+        generalBindings()
     }
     
     private func setupViews() {
         setupKeyTextField()
         setupGetInfoButton()
+        setupInfoLabel()
     }
     
     private func setupGetInfoButton() {
@@ -51,8 +55,10 @@ class SetupViewController: FormViewController {
             latest: false,
             scheduler: MainScheduler.instance
         )
-        .subscribe(onNext: {
-            self.viewModel.doSomethig()
+        .subscribe(onNext: {[weak self] in
+            guard let `self` = self else { return }
+            self.viewModel.checkPrivateKey()
+            self.inputTextField.text = ""
         })
         .disposed(by: disposeBag)
         viewModel.buttonEnabled
@@ -65,6 +71,26 @@ class SetupViewController: FormViewController {
         inputTextField.rx.text
             .orEmpty
             .bind(to: viewModel.privateKeyString)
+            .disposed(by: disposeBag)
+    }
+    
+    private func setupInfoLabel() {
+        infoLabel.text = "Invalid private key"
+        infoLabel.textColor = .red
+        viewModel.privateKey
+            .map {$0 != nil}
+            .drive(infoLabel.rx.isHidden)
+            .disposed(by: disposeBag)
+        infoLabel.isHidden = true
+    }
+    
+    private func generalBindings() {
+        viewModel.privateKey
+            .drive(onNext: { [weak self] key in
+                guard let `self` = self else { return }
+                guard let privateKey = key  else { return }
+                self.delegate?.privateKeyWasSuccesful(withPrivateKey: privateKey)
+            })
             .disposed(by: disposeBag)
     }
 }

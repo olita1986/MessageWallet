@@ -8,11 +8,18 @@
 
 import RxSwift
 import RxCocoa
+import Web3
 
 class SetupViewModel {
     // MARK: - Properties
     
     let privateKeyString = BehaviorRelay<String>(value: "")
+    
+    let _privateKey = BehaviorRelay<EthereumPrivateKey?>(value: nil)
+    
+    var privateKey: Driver<EthereumPrivateKey?> {
+        return _privateKey.asDriver()
+    }
     
     var buttonEnabled: Driver<Bool> {
         return privateKeyString
@@ -20,11 +27,14 @@ class SetupViewModel {
             .asDriver(onErrorJustReturn: false)
     }
     
-    init() {
-        
+    let ethService: ETHServiceProtocol
+    
+    init(ethService: ETHServiceProtocol = ETHService()) {
+        self.ethService = ethService
     }
     
-    func doSomethig() {
-        print(privateKeyString.value)
+    func checkPrivateKey() {
+        let privateKey = ethService.isValidPrivateKey(key: privateKeyString.value)
+        _privateKey.accept(privateKey)
     }
 }

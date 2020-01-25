@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Web3
 
 class AccountViewController: UIViewController {
 
@@ -18,10 +19,25 @@ class AccountViewController: UIViewController {
     @IBOutlet weak var signButton: UIButton!
     
     
+    // MARK: - Properties
+    
+    let privateKey: EthereumPrivateKey
+    
+    init(privateKey: EthereumPrivateKey) {
+        self.privateKey = privateKey
+        super.init(nibName: "AccountViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        addressLabel.text = privateKey.address.hex(eip55: true)
     }
 
 }

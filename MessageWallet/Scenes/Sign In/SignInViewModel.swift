@@ -8,6 +8,7 @@
 
 import RxSwift
 import RxCocoa
+import Web3
 
 class SignInViewModel {
     // MARK: - Properties
@@ -26,6 +27,14 @@ class SignInViewModel {
     
     func doSomethig() {
         print(message.value)
+    }
+    
+    func doSomethingElse() {
+//        let ethPrivateKey = try? EthereumPrivateKey(hexPrivateKey: "0x94eca03b4541a0eb0d173e321b6f960d08cfe4c5a75fa00ebe0a3d283c609c3a")
+//        
+//        print(ethPrivateKey?.address.)
+//        
+//        ethPrivateKey?.sign(message: Bytes()
     }
 }
 

@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormViewController" customModule="MessageWallet" customModuleProvider="target">
             <connections>
                 <outlet property="actionButton" destination="gSh-ug-f69" id="HYS-ky-jhs"/>
+                <outlet property="infoLabel" destination="zLh-aA-FhN" id="YYF-bP-dBA"/>
                 <outlet property="inputTextField" destination="vy0-xl-dpi" id="hx7-ce-CTJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -37,6 +38,12 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Get Info"/>
                         </button>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLh-aA-FhN">
+                            <rect key="frame" x="166" y="74" width="42" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <constraints>
                         <constraint firstItem="vy0-xl-dpi" firstAttribute="leading" secondItem="0Go-GY-beJ" secondAttribute="leading" id="QtS-NO-Nlb"/>
