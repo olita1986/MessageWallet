@@ -3,17 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E9A174A8FF64B334131670 /* Pods_MessageWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0487A4FE0921FD3FC4F90D /* Pods_MessageWalletTests.framework */; };
 		30C740DD23DC6DC000FDB29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C740DC23DC6DC000FDB29E /* AppDelegate.swift */; };
-		30C740DF23DC6DC000FDB29E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C740DE23DC6DC000FDB29E /* SceneDelegate.swift */; };
-		30C740E123DC6DC000FDB29E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C740E023DC6DC000FDB29E /* ViewController.swift */; };
-		30C740E423DC6DC000FDB29E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C740E223DC6DC000FDB29E /* Main.storyboard */; };
 		30C740E623DC6DC400FDB29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C740E523DC6DC400FDB29E /* Assets.xcassets */; };
 		30C740E923DC6DC400FDB29E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C740E723DC6DC400FDB29E /* LaunchScreen.storyboard */; };
 		30C740F423DC6DC400FDB29E /* MessageWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C740F323DC6DC400FDB29E /* MessageWalletTests.swift */; };
+		30C7410C23DC74D600FDB29E /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7410A23DC74D600FDB29E /* SetupViewController.swift */; };
+		30C7411023DC74E600FDB29E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7410E23DC74E600FDB29E /* AccountViewController.swift */; };
+		30C7411123DC74E600FDB29E /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C7410F23DC74E600FDB29E /* AccountViewController.xib */; };
+		30C7411423DC74F800FDB29E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7411223DC74F800FDB29E /* SignInViewController.swift */; };
+		30C7411823DC750500FDB29E /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7411623DC750500FDB29E /* SignatureViewController.swift */; };
+		30C7411923DC750500FDB29E /* SignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C7411723DC750500FDB29E /* SignatureViewController.xib */; };
+		30C7411C23DC751400FDB29E /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7411A23DC751400FDB29E /* VerificationViewController.swift */; };
+		30C7412023DC752300FDB29E /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7411E23DC752300FDB29E /* ScannerViewController.swift */; };
+		30C7412123DC752300FDB29E /* ScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C7411F23DC752300FDB29E /* ScannerViewController.xib */; };
+		30C7412323DC753700FDB29E /* SetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7412223DC753700FDB29E /* SetupViewModel.swift */; };
+		30C7412523DC754E00FDB29E /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7412423DC754E00FDB29E /* AccountViewModel.swift */; };
+		30C7412723DC755A00FDB29E /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7412623DC755A00FDB29E /* SignInViewModel.swift */; };
+		30C7412923DC756500FDB29E /* SignatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7412823DC756500FDB29E /* SignatureViewModel.swift */; };
+		30C7412B23DC757F00FDB29E /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7412A23DC757F00FDB29E /* VerificationViewModel.swift */; };
+		30C7412D23DC758900FDB29E /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7412C23DC758900FDB29E /* ScannerViewModel.swift */; };
+		30C7413023DC76DB00FDB29E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7412F23DC76DB00FDB29E /* Coordinator.swift */; };
+		30C7413223DC771C00FDB29E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7413123DC771C00FDB29E /* AppCoordinator.swift */; };
+		30C7413523DC7AE500FDB29E /* UIViewControllersExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7413423DC7AE500FDB29E /* UIViewControllersExtensions.swift */; };
+		30C7413923DC8D9D00FDB29E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7413723DC8D9D00FDB29E /* FormViewController.swift */; };
+		30C7413A23DC8D9D00FDB29E /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C7413823DC8D9D00FDB29E /* FormViewController.xib */; };
+		8FB0809E19DC055D398145F8 /* Pods_MessageWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E57FC85B18E37C9EA998C20 /* Pods_MessageWallet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,15 +48,38 @@
 /* Begin PBXFileReference section */
 		30C740D923DC6DC000FDB29E /* MessageWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C740DC23DC6DC000FDB29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30C740DE23DC6DC000FDB29E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30C740E023DC6DC000FDB29E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30C740E323DC6DC000FDB29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30C740E523DC6DC400FDB29E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30C740E823DC6DC400FDB29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30C740EA23DC6DC400FDB29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30C740EF23DC6DC400FDB29E /* MessageWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C740F323DC6DC400FDB29E /* MessageWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageWalletTests.swift; sourceTree = "<group>"; };
 		30C740F523DC6DC400FDB29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C7410A23DC74D600FDB29E /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		30C7410E23DC74E600FDB29E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		30C7410F23DC74E600FDB29E /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		30C7411223DC74F800FDB29E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		30C7411623DC750500FDB29E /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		30C7411723DC750500FDB29E /* SignatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignatureViewController.xib; sourceTree = "<group>"; };
+		30C7411A23DC751400FDB29E /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		30C7411E23DC752300FDB29E /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		30C7411F23DC752300FDB29E /* ScannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerViewController.xib; sourceTree = "<group>"; };
+		30C7412223DC753700FDB29E /* SetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewModel.swift; sourceTree = "<group>"; };
+		30C7412423DC754E00FDB29E /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		30C7412623DC755A00FDB29E /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		30C7412823DC756500FDB29E /* SignatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewModel.swift; sourceTree = "<group>"; };
+		30C7412A23DC757F00FDB29E /* VerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewModel.swift; sourceTree = "<group>"; };
+		30C7412C23DC758900FDB29E /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		30C7412F23DC76DB00FDB29E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		30C7413123DC771C00FDB29E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		30C7413423DC7AE500FDB29E /* UIViewControllersExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllersExtensions.swift; sourceTree = "<group>"; };
+		30C7413723DC8D9D00FDB29E /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		30C7413823DC8D9D00FDB29E /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
+		6C1B6EB5B96C1ED15DE9C42E /* Pods-MessageWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-MessageWalletTests/Pods-MessageWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A0487A4FE0921FD3FC4F90D /* Pods_MessageWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0FA22DFD32247BD9EBBED2 /* Pods-MessageWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageWalletTests.release.xcconfig"; path = "Target Support Files/Pods-MessageWalletTests/Pods-MessageWalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E57FC85B18E37C9EA998C20 /* Pods_MessageWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		962611E880EDF4D6C1ECFDB2 /* Pods-MessageWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageWallet.release.xcconfig"; path = "Target Support Files/Pods-MessageWallet/Pods-MessageWallet.release.xcconfig"; sourceTree = "<group>"; };
+		F13B0B11BD8A5CB633A7A127 /* Pods-MessageWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageWallet.debug.xcconfig"; path = "Target Support Files/Pods-MessageWallet/Pods-MessageWallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB0809E19DC055D398145F8 /* Pods_MessageWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E9A174A8FF64B334131670 /* Pods_MessageWalletTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +108,8 @@
 				30C740DB23DC6DC000FDB29E /* MessageWallet */,
 				30C740F223DC6DC400FDB29E /* MessageWalletTests */,
 				30C740DA23DC6DC000FDB29E /* Products */,
+				A02C05BF8A2A1C1D575A17BF /* Pods */,
+				5607B8247C8CD82CA01821BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +125,14 @@
 		30C740DB23DC6DC000FDB29E /* MessageWallet */ = {
 			isa = PBXGroup;
 			children = (
-				30C740DC23DC6DC000FDB29E /* AppDelegate.swift */,
-				30C740DE23DC6DC000FDB29E /* SceneDelegate.swift */,
-				30C740E023DC6DC000FDB29E /* ViewController.swift */,
-				30C740E223DC6DC000FDB29E /* Main.storyboard */,
-				30C740E523DC6DC400FDB29E /* Assets.xcassets */,
-				30C740E723DC6DC400FDB29E /* LaunchScreen.storyboard */,
-				30C740EA23DC6DC400FDB29E /* Info.plist */,
+				30C7413323DC7AAA00FDB29E /* Extensions */,
+				30C7412E23DC76C700FDB29E /* Coordinator */,
+				30C7410323DC733400FDB29E /* Helpers */,
+				30C7410223DC71A700FDB29E /* Storyboards */,
+				30C7410123DC714800FDB29E /* Resources */,
+				30C7410023DC711200FDB29E /* Application Delegate */,
+				30C740FF23DC70CF00FDB29E /* Supporting Files */,
+				30C740FE23DC70C900FDB29E /* Scenes */,
 			);
 			path = MessageWallet;
 			sourceTree = "<group>";
@@ -99,6 +146,163 @@
 			path = MessageWalletTests;
 			sourceTree = "<group>";
 		};
+		30C740FE23DC70C900FDB29E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				30C7413623DC8D8900FDB29E /* Common */,
+				30C7410923DC74B900FDB29E /* Scanner */,
+				30C7410823DC74B100FDB29E /* Verification */,
+				30C7410723DC74A700FDB29E /* Signature */,
+				30C7410623DC749C00FDB29E /* Sign In */,
+				30C7410523DC746F00FDB29E /* Account */,
+				30C7410423DC746500FDB29E /* Setup */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		30C740FF23DC70CF00FDB29E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30C740EA23DC6DC400FDB29E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30C7410023DC711200FDB29E /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				30C740DC23DC6DC000FDB29E /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		30C7410123DC714800FDB29E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30C740E523DC6DC400FDB29E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30C7410223DC71A700FDB29E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				30C740E723DC6DC400FDB29E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		30C7410323DC733400FDB29E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				30C7412F23DC76DB00FDB29E /* Coordinator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		30C7410423DC746500FDB29E /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				30C7410A23DC74D600FDB29E /* SetupViewController.swift */,
+				30C7412223DC753700FDB29E /* SetupViewModel.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		30C7410523DC746F00FDB29E /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				30C7410E23DC74E600FDB29E /* AccountViewController.swift */,
+				30C7410F23DC74E600FDB29E /* AccountViewController.xib */,
+				30C7412423DC754E00FDB29E /* AccountViewModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		30C7410623DC749C00FDB29E /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				30C7411223DC74F800FDB29E /* SignInViewController.swift */,
+				30C7412623DC755A00FDB29E /* SignInViewModel.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		30C7410723DC74A700FDB29E /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				30C7411623DC750500FDB29E /* SignatureViewController.swift */,
+				30C7411723DC750500FDB29E /* SignatureViewController.xib */,
+				30C7412823DC756500FDB29E /* SignatureViewModel.swift */,
+			);
+			path = Signature;
+			sourceTree = "<group>";
+		};
+		30C7410823DC74B100FDB29E /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				30C7411A23DC751400FDB29E /* VerificationViewController.swift */,
+				30C7412A23DC757F00FDB29E /* VerificationViewModel.swift */,
+			);
+			path = Verification;
+			sourceTree = "<group>";
+		};
+		30C7410923DC74B900FDB29E /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				30C7411E23DC752300FDB29E /* ScannerViewController.swift */,
+				30C7411F23DC752300FDB29E /* ScannerViewController.xib */,
+				30C7412C23DC758900FDB29E /* ScannerViewModel.swift */,
+			);
+			name = Scanner;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		30C7412E23DC76C700FDB29E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				30C7413123DC771C00FDB29E /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		30C7413323DC7AAA00FDB29E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30C7413423DC7AE500FDB29E /* UIViewControllersExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30C7413623DC8D8900FDB29E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				30C7413723DC8D9D00FDB29E /* FormViewController.swift */,
+				30C7413823DC8D9D00FDB29E /* FormViewController.xib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5607B8247C8CD82CA01821BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E57FC85B18E37C9EA998C20 /* Pods_MessageWallet.framework */,
+				7A0487A4FE0921FD3FC4F90D /* Pods_MessageWalletTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A02C05BF8A2A1C1D575A17BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F13B0B11BD8A5CB633A7A127 /* Pods-MessageWallet.debug.xcconfig */,
+				962611E880EDF4D6C1ECFDB2 /* Pods-MessageWallet.release.xcconfig */,
+				6C1B6EB5B96C1ED15DE9C42E /* Pods-MessageWalletTests.debug.xcconfig */,
+				7E0FA22DFD32247BD9EBBED2 /* Pods-MessageWalletTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30C740F823DC6DC400FDB29E /* Build configuration list for PBXNativeTarget "MessageWallet" */;
 			buildPhases = (
+				04C36D2CE58D01A5AF37E50D /* [CP] Check Pods Manifest.lock */,
 				30C740D523DC6DC000FDB29E /* Sources */,
 				30C740D623DC6DC000FDB29E /* Frameworks */,
 				30C740D723DC6DC000FDB29E /* Resources */,
+				277D2024C06EBFEB8FAA6CC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +329,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30C740FB23DC6DC400FDB29E /* Build configuration list for PBXNativeTarget "MessageWalletTests" */;
 			buildPhases = (
+				C0D7CBB5EC1FB81C1BF25F17 /* [CP] Check Pods Manifest.lock */,
 				30C740EB23DC6DC400FDB29E /* Sources */,
 				30C740EC23DC6DC400FDB29E /* Frameworks */,
 				30C740ED23DC6DC400FDB29E /* Resources */,
@@ -181,8 +388,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C740E923DC6DC400FDB29E /* LaunchScreen.storyboard in Resources */,
+				30C7412123DC752300FDB29E /* ScannerViewController.xib in Resources */,
+				30C7411123DC74E600FDB29E /* AccountViewController.xib in Resources */,
 				30C740E623DC6DC400FDB29E /* Assets.xcassets in Resources */,
-				30C740E423DC6DC000FDB29E /* Main.storyboard in Resources */,
+				30C7413A23DC8D9D00FDB29E /* FormViewController.xib in Resources */,
+				30C7411923DC750500FDB29E /* SignatureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +405,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04C36D2CE58D01A5AF37E50D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MessageWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		277D2024C06EBFEB8FAA6CC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessageWallet/Pods-MessageWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessageWallet/Pods-MessageWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MessageWallet/Pods-MessageWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D7CBB5EC1FB81C1BF25F17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MessageWalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30C740D523DC6DC000FDB29E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C740E123DC6DC000FDB29E /* ViewController.swift in Sources */,
+				30C7412023DC752300FDB29E /* ScannerViewController.swift in Sources */,
+				30C7412923DC756500FDB29E /* SignatureViewModel.swift in Sources */,
+				30C7411C23DC751400FDB29E /* VerificationViewController.swift in Sources */,
+				30C7412D23DC758900FDB29E /* ScannerViewModel.swift in Sources */,
+				30C7413523DC7AE500FDB29E /* UIViewControllersExtensions.swift in Sources */,
+				30C7411423DC74F800FDB29E /* SignInViewController.swift in Sources */,
+				30C7411823DC750500FDB29E /* SignatureViewController.swift in Sources */,
+				30C7413023DC76DB00FDB29E /* Coordinator.swift in Sources */,
+				30C7412723DC755A00FDB29E /* SignInViewModel.swift in Sources */,
+				30C7412523DC754E00FDB29E /* AccountViewModel.swift in Sources */,
+				30C7412323DC753700FDB29E /* SetupViewModel.swift in Sources */,
+				30C7410C23DC74D600FDB29E /* SetupViewController.swift in Sources */,
+				30C7412B23DC757F00FDB29E /* VerificationViewModel.swift in Sources */,
+				30C7413223DC771C00FDB29E /* AppCoordinator.swift in Sources */,
 				30C740DD23DC6DC000FDB29E /* AppDelegate.swift in Sources */,
-				30C740DF23DC6DC000FDB29E /* SceneDelegate.swift in Sources */,
+				30C7413923DC8D9D00FDB29E /* FormViewController.swift in Sources */,
+				30C7411023DC74E600FDB29E /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +513,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		30C740E223DC6DC000FDB29E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30C740E323DC6DC000FDB29E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		30C740E723DC6DC400FDB29E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,10 +640,11 @@
 		};
 		30C740F923DC6DC400FDB29E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13B0B11BD8A5CB633A7A127 /* Pods-MessageWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MessageWallet/Info.plist;
+				INFOPLIST_FILE = "MessageWallet/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,16 +652,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = OrlandoArzola.MessageWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		30C740FA23DC6DC400FDB29E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962611E880EDF4D6C1ECFDB2 /* Pods-MessageWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MessageWallet/Info.plist;
+				INFOPLIST_FILE = "MessageWallet/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,12 +670,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = OrlandoArzola.MessageWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		30C740FC23DC6DC400FDB29E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C1B6EB5B96C1ED15DE9C42E /* Pods-MessageWalletTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +698,7 @@
 		};
 		30C740FD23DC6DC400FDB29E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0FA22DFD32247BD9EBBED2 /* Pods-MessageWalletTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
