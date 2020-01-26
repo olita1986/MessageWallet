@@ -11,6 +11,8 @@ PODS:
   - Web3 (0.4.2):
     - Web3/Core (= 0.4.2)
     - Web3/HTTPExtension (= 0.4.2)
+  - Web3/ContractABI (0.4.2):
+    - Web3/Core
   - Web3/Core (0.4.2):
     - BigInt (~> 4.0)
     - CryptoSwift (~> 1.0)
@@ -22,6 +24,7 @@ DEPENDENCIES:
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - Web3
+  - Web3/ContractABI
 
 SPEC REPOS:
   trunk:
@@ -42,6 +45,6 @@ SPEC CHECKSUMS:
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
   Web3: 7b2c30f98f24cc290bc671ab525d7a30a2afbc73
 
-PODFILE CHECKSUM: c2a0d58b1cc10fa87cc1ba1f4ff5c7ff93a90202
+PODFILE CHECKSUM: 1afc76c183f6c6805385af1d027b9d90e039231d
 
 COCOAPODS: 1.8.4

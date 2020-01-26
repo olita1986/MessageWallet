@@ -22,11 +22,14 @@ class SignatureViewController: UIViewController {
     
     let viewModel: SignatureViewModel
     let message: String
+    let signature: String
     
     init(viewModel: SignatureViewModel = SignatureViewModel(),
-         message: String) {
+         message: String,
+         signature: String) {
         self.message = message
         self.viewModel = viewModel
+        self.signature = signature
         
         super.init(
             nibName: "SignatureViewController",
@@ -43,7 +46,7 @@ class SignatureViewController: UIViewController {
         
         setupViews()
 
-        viewModel.getQRImage(withMessage: message)
+        viewModel.getQRImage(withMessage: signature)
     }
 
 

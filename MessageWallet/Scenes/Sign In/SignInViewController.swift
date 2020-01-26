@@ -9,6 +9,11 @@
 import RxCocoa
 import RxSwift
 import UIKit
+import Web3
+
+protocol SignInViewControllerDelegate: AnyObject {
+    func signMessage(signature: String, message: String)
+}
 
 class SignInViewController: FormViewController {
     
@@ -16,8 +21,13 @@ class SignInViewController: FormViewController {
     
     private let disposeBag = DisposeBag()
     private let viewModel: SignInViewModel
+    let privateKey: EthereumPrivateKey
     
-    init(viewModel: SignInViewModel = SignInViewModel()) {
+    weak var delegate: SignInViewControllerDelegate?
+    
+    init(viewModel: SignInViewModel = SignInViewModel(),
+         privateKey: EthereumPrivateKey) {
+        self.privateKey = privateKey
         self.viewModel = viewModel
         
         super.init()
@@ -32,7 +42,7 @@ class SignInViewController: FormViewController {
         super.viewDidLoad()
 
         setupViews()
-        viewModel.doSomethingElse()
+        generalBindings()
     }
     
     private func setupViews() {
@@ -47,8 +57,9 @@ class SignInViewController: FormViewController {
             latest: false,
             scheduler: MainScheduler.instance
         )
-        .subscribe(onNext: {
-            self.viewModel.doSomethig()
+        .subscribe(onNext: {[weak self] in
+            guard let `self` = self else { return }
+            self.viewModel.signMessage(privateKey: self.privateKey)
         })
         .disposed(by: disposeBag)
         viewModel.buttonEnabled
@@ -63,5 +74,17 @@ class SignInViewController: FormViewController {
             .bind(to: viewModel.message)
             .disposed(by: disposeBag)
     }
-
+    
+    private func generalBindings() {
+        viewModel.signature
+            .drive(onNext: {[weak self] signature in
+                guard let `self` = self else { return }
+                guard !signature.isEmpty else { return }
+                self.delegate?.signMessage(
+                    signature: signature,
+                    message: self.viewModel.message.value
+                )
+            })
+            .disposed(by: disposeBag)
+    }
 }

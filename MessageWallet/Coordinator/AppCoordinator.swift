@@ -10,7 +10,9 @@ import UIKit
 import Web3
 
 class AppCoordinator: Coordinator,
-    SetupViewControllerDelegate {
+    SetupViewControllerDelegate,
+    SignInViewControllerDelegate,
+    AccountViewControllerDelegate {
     public var rootViewController: UIViewController {
         return navigationController
     }
@@ -32,6 +34,27 @@ class AppCoordinator: Coordinator,
     
     func privateKeyWasSuccesful(withPrivateKey key: EthereumPrivateKey) {
         let accountVC = AccountViewController(privateKey: key)
+        accountVC.delegate = self
         navigationController.pushViewController(accountVC, animated: true)
+    }
+    
+    // MARK: - SignInViewControllerDelegate methods
+    
+    func signMessage(signature: String, message: String) {
+        let signatureVC = SignatureViewController(message: message, signature: signature)
+        navigationController.pushViewController(signatureVC, animated: true)
+    }
+    
+    // MARK: - AccountViewControllerDelegate
+    
+    func signWasSelected(privateKey: EthereumPrivateKey) {
+        let signinVC = SignInViewController(privateKey: privateKey)
+        signinVC.title = "Sign"
+        signinVC.delegate = self
+        navigationController.pushViewController(signinVC, animated: true)
+    }
+    
+    func verifyWasSelected() {
+        
     }
 }

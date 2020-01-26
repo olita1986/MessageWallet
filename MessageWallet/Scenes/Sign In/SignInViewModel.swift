@@ -14,6 +14,11 @@ class SignInViewModel {
     // MARK: - Properties
     
     let message = BehaviorRelay<String>(value: "")
+    private let _signature = BehaviorRelay<String>(value: "")
+    
+    var signature: Driver<String> {
+        return _signature.asDriver()
+    }
     
     var buttonEnabled: Driver<Bool> {
         return message
@@ -21,20 +26,16 @@ class SignInViewModel {
             .asDriver(onErrorJustReturn: false)
     }
     
-    init() {
+    let ethService: ETHServiceProtocol
+    
+    init(ethService: ETHServiceProtocol = ETHService.shared) {
+        self.ethService = ethService
+    }
+    
+    func signMessage(privateKey: EthereumPrivateKey) {
+        let signature = ethService.signMessage(withPrivateKey: privateKey, message: message.value)
         
-    }
-    
-    func doSomethig() {
-        print(message.value)
-    }
-    
-    func doSomethingElse() {
-//        let ethPrivateKey = try? EthereumPrivateKey(hexPrivateKey: "0x94eca03b4541a0eb0d173e321b6f960d08cfe4c5a75fa00ebe0a3d283c609c3a")
-//        
-//        print(ethPrivateKey?.address.)
-//        
-//        ethPrivateKey?.sign(message: Bytes()
+        _signature.accept(signature)
     }
 }
 

@@ -7,6 +7,7 @@ target 'MessageWallet' do
 
   # Pods for MessageWallet
   pod 'Web3'
+  pod 'Web3/ContractABI'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
 

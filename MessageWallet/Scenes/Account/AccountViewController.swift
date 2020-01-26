@@ -6,8 +6,15 @@
 //  Copyright © 2020 Orlando Arzola Aragort. All rights reserved.
 //
 
+import RxSwift
+import RxCocoa
 import UIKit
 import Web3
+
+protocol AccountViewControllerDelegate: AnyObject {
+    func signWasSelected(privateKey: EthereumPrivateKey)
+    func verifyWasSelected()
+}
 
 class AccountViewController: UIViewController {
 
@@ -19,12 +26,20 @@ class AccountViewController: UIViewController {
     @IBOutlet weak var signButton: UIButton!
     
     
+    weak var delegate: AccountViewControllerDelegate?
+    
+    
     // MARK: - Properties
     
+    let viewModel: AccountViewModel
     let privateKey: EthereumPrivateKey
     
-    init(privateKey: EthereumPrivateKey) {
+    private let disponseBag = DisposeBag()
+    
+    init(privateKey: EthereumPrivateKey,
+         viewModel: AccountViewModel = AccountViewModel()) {
         self.privateKey = privateKey
+        self.viewModel = viewModel
         super.init(nibName: "AccountViewController", bundle: nil)
     }
     
@@ -35,9 +50,34 @@ class AccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupBindings()
 
-        // Do any additional setup after loading the view.
-        addressLabel.text = privateKey.address.hex(eip55: true)
+        viewModel.getData(withKey: privateKey)
+        viewModel.getBalance(address: privateKey.address)
+    }
+    
+    func setupBindings() {
+        viewModel.address
+            .drive(addressLabel.rx.text)
+            .disposed(by: disponseBag)
+        
+        viewModel.ethQuantity
+            .drive(etherBalanceLabel.rx.text)
+            .disposed(by: disponseBag)
+        
+        signButton.rx.tap
+            .subscribe(onNext: {[weak self] in
+                guard let `self` = self else { return }
+                self.delegate?.signWasSelected(privateKey: self.privateKey)
+            })
+            .disposed(by: disponseBag)
+        
+        verifyButton.rx.tap
+            .subscribe(onNext: {
+                self.delegate?.verifyWasSelected()
+            })
+            .disposed(by: disponseBag)
     }
 
 }

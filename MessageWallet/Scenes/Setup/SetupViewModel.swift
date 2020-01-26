@@ -29,7 +29,7 @@ class SetupViewModel {
     
     let ethService: ETHServiceProtocol
     
-    init(ethService: ETHServiceProtocol = ETHService()) {
+    init(ethService: ETHServiceProtocol = ETHService.shared) {
         self.ethService = ethService
     }
     
